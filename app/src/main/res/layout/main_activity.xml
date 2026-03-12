@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg_quiz_screen"
@@ -40,9 +41,6 @@
         android:layout_marginTop="20dp"
         android:orientation="vertical">
 
-        <!-- Top Row -->
-
-        <!-- Percentage Progress Bar -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -82,7 +80,7 @@
             android:progress="10" />
     </LinearLayout>
 
-    <!-- Accuracy / Timer Circle -->
+    <!-- Accuracy -->
     <TextView
         android:id="@+id/accuracyText"
         android:layout_width="60dp"
@@ -95,9 +93,6 @@
         android:textStyle="bold" />
 
     <!-- Question Card -->
-
-    <!-- Options -->
-
     <LinearLayout
         android:id="@+id/questionCard"
         android:layout_width="match_parent"
@@ -138,6 +133,7 @@
             android:textSize="18sp" />
     </LinearLayout>
 
+    <!-- Answer Buttons -->
     <LinearLayout
         android:id="@+id/optionsLayout"
         android:layout_width="match_parent"
@@ -149,18 +145,22 @@
             android:id="@+id/true_button"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:background="#FF7A18"
+            android:background="@drawable/answer_default_bg"
+            android:backgroundTint="@null"
+            app:backgroundTint="@null"
             android:text="@string/true_button"
-            android:textColor="#000000" />
+            android:textColor="#FFFFFF" />
 
         <Button
             android:id="@+id/false_button"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginTop="20dp"
-            android:background="#FF7A18"
+            android:background="@drawable/answer_default_bg"
+            android:backgroundTint="@null"
+            app:backgroundTint="@null"
             android:text="@string/false_button"
-            android:textColor="#000000" />
+            android:textColor="#FFFFFF" />
     </LinearLayout>
 
     <!-- Navigation Buttons -->
@@ -168,15 +168,14 @@
         android:id="@+id/navigationLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/optionsLayout"
         android:layout_marginTop="20dp"
         android:gravity="center"
         android:orientation="horizontal">
 
         <ImageButton
             android:id="@+id/previous_button"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:background="@drawable/arrow_left"
             android:contentDescription="@string/previous" />
 
@@ -186,8 +185,8 @@
 
         <ImageButton
             android:id="@+id/next_button"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:background="@drawable/arrow_right"
             android:contentDescription="@string/next" />
     </LinearLayout>
@@ -198,9 +197,8 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_marginTop="20dp"
-        android:layout_alignParentBottom="true"
-        android:background="#FF7A18"
+        android:background="@drawable/answer_default_bg"
         android:text="@string/call_button"
-        android:textColor="#000000" />
+        android:textColor="#FFFFFF" />
 
 </LinearLayout>

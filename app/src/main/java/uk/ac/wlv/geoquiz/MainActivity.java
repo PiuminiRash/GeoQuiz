@@ -10,7 +10,6 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.content.ContextCompat;
 
 import java.util.Locale;
 
@@ -163,21 +162,17 @@ public class MainActivity extends AppCompatActivity {
 
     private void showHint() {
         boolean correctAnswer = mQuestionBank[currentQuestionIndex].isAnswerTrue();
+
         if (correctAnswer) {
-            trueButton.setBackgroundColor(
-                    ContextCompat.getColor(this, android.R.color.holo_green_light));
+            trueButton.setBackgroundResource(R.drawable.answer_correct_bg);
         } else {
-            falseButton.setBackgroundColor(
-                    ContextCompat.getColor(this, android.R.color.holo_green_light));
+            falseButton.setBackgroundResource(R.drawable.answer_correct_bg);
         }
     }
 
-    private void resetButtonColors(){
-        trueButton.setBackgroundColor(
-                ContextCompat.getColor(this, android.R.color.holo_orange_light));
-
-        falseButton.setBackgroundColor(
-                ContextCompat.getColor(this, android.R.color.holo_orange_light));
+    private void resetButtonColors() {
+        trueButton.setBackgroundResource(R.drawable.answer_default_bg);
+        falseButton.setBackgroundResource(R.drawable.answer_default_bg);
     }
 
     private void updateAccuracy() {
