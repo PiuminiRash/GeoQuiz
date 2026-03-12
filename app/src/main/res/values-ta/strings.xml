@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">GeoQuiz</string>
+
+    <string name="english">ஆங்கிலம்</string>
+    <string name="sinhala">சிங்களம்</string>
+    <string name="tamil">தமிழ்</string>
+
+    <string name="previous">previous</string>
+    <string name="next">next</string>
+
+    <string name="call_button">Contact</string>
+
+    <string name="hint">குறிப்பு</string>
+    <string name="question_number">கேள்வி</string>
+    <string name="accuracyText">0%</string>
+    <string name="true_button">சரி</string>
+    <string name="false_button">தவறு</string>
+
+    //Question
+    <string name="question1">இலங்கை தீவுநாட்டு நாடாகும்.</string>
+    <string name="question2">பிரான்சின் தலைநகரம் பெர்லின் ஆகும்.</string>
+    <string name="question3">எவரெஸ்ட் மலை உயரமான மலை.</string>
+    <string name="question4">பசிபிக் பெருங்கடல் சிறிய கடல் ஆகும்.</string>
+    <string name="question5">ஜாவா என்பது ஒரு நிரலாக்க மொழி.</string>
+    <string name="question6">சூரியன் ஒரு கிரகமாகும்.</string>
+    <string name="question7">கொழும்பு இலங்கையில் உள்ளது.</string>
+    <string name="question8">ஆண்ட்ராய்ட்டை கூகுள் உருவாக்கியது.</string>
+    <string name="question9">தண்ணீர் 100°C-க்கு காயும்.</string>
+    <string name="question10">பூமி சமமாக உள்ளது.</string>
+</resources>

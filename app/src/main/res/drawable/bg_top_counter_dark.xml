@@ -1,0 +1,5 @@
+<!-- res/drawable/bg_top_counter_dark.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#0E0E16" />
+    <corners android:radius="12dp" />
+</shape>

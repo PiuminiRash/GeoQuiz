@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_quiz_screen"
+    android:gravity="top|center_horizontal"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <!-- Language Buttons -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnEnglish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/english" />
+
+        <Button
+            android:id="@+id/btnSinhala"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sinhala" />
+
+        <Button
+            android:id="@+id/btnTamil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tamil" />
+    </LinearLayout>
+
+    <!-- Progress Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <!-- Top Row -->
+
+        <!-- Percentage Progress Bar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/progressLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_top_counter_dark"
+                android:padding="15dp"
+                android:text="9-10"
+                android:textColor="#FFFFFF" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/progressRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_top_counter_orange"
+                android:padding="15dp"
+                android:text="1-10"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/quizProgress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_marginTop="10dp"
+            android:max="100"
+            android:progress="10" />
+    </LinearLayout>
+
+    <!-- Accuracy / Timer Circle -->
+    <TextView
+        android:id="@+id/accuracyText"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/circle_timer"
+        android:gravity="center"
+        android:text="@string/accuracyText"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+    <!-- Question Card -->
+
+    <!-- Options -->
+
+    <LinearLayout
+        android:id="@+id/questionCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/card_bg"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <Button
+            android:id="@+id/hintButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/hint_button_bg"
+            android:text="@string/hint"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/question_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/question_number"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/question_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/optionsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/true_button"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#FF7A18"
+            android:text="@string/true_button"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/false_button"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:background="#FF7A18"
+            android:text="@string/false_button"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+    <!-- Navigation Buttons -->
+    <LinearLayout
+        android:id="@+id/navigationLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/optionsLayout"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/previous_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/arrow_left"
+            android:contentDescription="@string/previous" />
+
+        <Space
+            android:layout_width="40dp"
+            android:layout_height="1dp" />
+
+        <ImageButton
+            android:id="@+id/next_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/arrow_right"
+            android:contentDescription="@string/next" />
+    </LinearLayout>
+
+    <!-- Call Button -->
+    <Button
+        android:id="@+id/call_button"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentBottom="true"
+        android:background="#FF7A18"
+        android:text="@string/call_button"
+        android:textColor="#000000" />
+
+</LinearLayout>

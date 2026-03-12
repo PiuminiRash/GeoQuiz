@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">GeoQuiz</string>
+
+    <string name="english">English</string>
+    <string name="sinhala">Sinhala</string>
+    <string name="tamil">Tamil</string>
+
+    <string name="hint">Hint</string>
+    <string name="question_number">Question</string>
+    <string name="accuracyText">0%</string>
+
+    <string name="previous">previous</string>
+    <string name="next">next</string>
+
+    <string name="true_button">True</string>
+    <string name="false_button">False</string>
+
+    <string name="call_button">Contact</string>
+
+    <string name="question1">Sri Lanka is an island country.</string>
+    <string name="question2">The capital of France is Berlin.</string>
+    <string name="question3">The Earth revolves around the Sun.</string>
+    <string name="question4">The Moon is bigger than the Earth.</string>
+    <string name="question5">Water boils at 100°C.</string>
+    <string name="question6">Java was created before C language.</string>
+    <string name="question7">Mount Everest is the tallest mountain.</string>
+    <string name="question8">The Pacific Ocean is the largest ocean.</string>
+    <string name="question9">Humans have 206 bones.</string>
+    <string name="question10">The Sun is a planet.</string>
+
+</resources>

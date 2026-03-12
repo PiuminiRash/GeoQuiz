@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">GeoQuiz</string>
+
+    <string name="english">ඉංග්‍රීසි</string>
+    <string name="sinhala">සිංහල</string>
+    <string name="tamil">දෙමළ</string>
+
+    <string name="previous"></string>
+    <string name="next">next</string>
+
+    <string name="hint">ඉඟිය</string>
+    <string name="question_number">ප්‍රශ්නය</string>
+    <string name="accuracyText">0%</string>
+
+    <string name="true_button">හරි</string>
+    <string name="false_button">වැරදි</string>
+
+    <string name="call_button">Contact</string>
+
+    //Questions
+    <string name="question1">ශ්‍රී ලංකාව දූපත් ජාතියකි.</string>
+    <string name="question2">ප්‍රංශයේ අගනගරය බර්ලින් වේ.</string>
+    <string name="question3">එවරස් කන්ද ඉහළම කන්දයයි.</string>
+    <string name="question4">පැසිෆික් සාගරය කුඩාම සාගරයයි.</string>
+    <string name="question5">ජාවා යනු ක්‍රමලේඛන භාෂාවකි.</string>
+    <string name="question6">සූර්යයා ග්‍රහලෝකයකි.</string>
+    <string name="question7">කොළඹ ශ්‍රී ලංකාවේ පිහිටා ඇත.</string>
+    <string name="question8">ඇන්ඩ්‍රොයිඩ් ගූගල් විසින් සංවර්ධනය කරයි.</string>
+    <string name="question9">ජලය 100°C දක්වා උඳුනේ ය.</string>
+    <string name="question10">පෘථිවිය සෘජු වේ.</string>
+</resources>
